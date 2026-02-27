@@ -32,8 +32,8 @@ class Optimize_Target(ABC):
 
 class Sphere(Optimize_Target):
     def __init__(self) -> None:
-        self.recommend_interval = {"x": [-10, 10], "y": [-10, 10]}
-        self.recommend_start_pos = np.array([20, 20])
+        self.recommend_interval = {"x": [-100, 100], "y": [-100, 100]}
+        self.recommend_start_pos = np.array(object=[20, 20])
         self.optimal_res = [0, 0, 0]
         self.func_expression = r"$ F(x) = x^2 + y^2 $"
 

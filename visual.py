@@ -155,13 +155,13 @@ def draw_trace(optimize_target, history_dict, start_pos, lr, epoches, x_range, y
 
     if is_save is True:
         if file_name is None:
-            file_name = "animation.html "
+            file_name = "animation.mp4 "
         if not os.path.exists("./results"):
             try:
                 os.mkdir("./results")
             except OSError as e:
                 raise ValueError(f"Failed to create directory ./results: {e}")
-        writer = animation.HTMLWriter(fps=30, embed_frames=True, default_mode="loop")
+        writer = animation.FFMpegFileWriter(fps=30)
         ani.save("./results/"+file_name, writer=writer)
 
     return ani

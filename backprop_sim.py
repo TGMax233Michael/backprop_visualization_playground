@@ -12,7 +12,7 @@ def get_parser():
     parser.add_argument("-lr", default=0.01, type=float)
     parser.add_argument("-epochs", default=500, type=int)
     parser.add_argument("-f", default="simple", type=str)
-    parser.add_argument("-html", default=False, type=bool, help="Set True to save matplotlib animation as html file")
+    parser.add_argument("-mp4", default=False, type=bool, help="Set True to save matplotlib animation as mp4 file")
     parser.add_argument("-start", nargs=2, default=None, type=float, help="Start Position for simulation, e.g. (x, y)")
     return parser
 
@@ -46,7 +46,7 @@ if __name__ == "__main__":
     lr = args.lr
     epochs = args.epochs
     target_name = args.f
-    to_save_html = args.html
+    to_save_mp4 = args.mp4
     start_pos = args.start
     optim_target = get_optim_target(target_name)
     file_name = get_file_name()
@@ -60,4 +60,4 @@ if __name__ == "__main__":
     print(x_range)
     print(y_range)
     
-    sim(optim_target, epochs, lr, start_pos, x_range, y_range, 256, is_save=to_save_html, file_name=file_name)
+    sim(optim_target, epochs, lr, start_pos, x_range, y_range, 256, is_save=to_save_mp4, file_name=file_name)
