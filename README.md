@@ -1,5 +1,5 @@
-# Backpropagation Visualization Playground
-This repository contains a simple implementation of a backpropagation visualization playground. It used several optimization functions to demonstrate how the optimization process and help user to understand how different optimization functions affect the backpropagation process.
+# Gradient Descent Visualization Playground
+This repository contains a simple implementation of a gradient descent visualization playground. It used several optimization functions to demonstrate how the optimization process and help user to understand how different optimization functions affect the gradient descent process.
 
 # Environment
 This project is implemented in Python 3.11 with numpy and matplotlib.
@@ -8,15 +8,15 @@ $ pip install numpy matplotlib
 ```
 
 # Usage
-To run the backpropagation visualization playground, simply execute the `backprop_sim.py` file:
+To run the gradient descent visualization playground, simply execute the `gd_sim.py` file:
 ``` bash
-$ python backprop_sim.py -f Sphere
+$ python gd_sim.py -f Sphere
 ```
 
 | Argument | Description |
 | --- | --- |
 | `-f` | The optimization function to visualize. Options include: `Sphere`, `Rosenbrock`, `Rastrigin`, `Ackley`, `Griewank`, `Schwefel`. |
-| `epochs` | The number of epochs to run the simulation for. |
+| `-epochs` | The number of epochs to run the simulation for. |
 | `-lr` | The learning rate for the optimization process. |
 | `-start` | The starting point for the optimization process. |
 | `-mp4` | Generate an mp4 video file of the optimization process. |
@@ -40,8 +40,8 @@ The following optimization functions are implemented in this playground:
 
 ## Reference:
 1. [Optimization Test Functions](https://www.sfu.ca/~ssurjano/optimization.html)
-2. [Wikipedia: Test functions for optimization](https://en.wikipedia.org/wiki/Test_functions_for_optimization)
+2. [Wikipedia: Test Functions For Optimization](https://en.wikipedia.org/wiki/Test_functions_for_optimization)
 
 # Example
-Click the image below to watch the optimization process of the Sphere function.
+Click the image below to see the optimization process of the Sphere function.
 [![](media/example.png)](media/video.mp4)

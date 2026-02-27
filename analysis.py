@@ -1,6 +1,6 @@
 import numpy as np
 
-from gd_sim import update
+from gd_update import update
 from visual import draw_trace
 from utils import is_contain_nan
 
