@@ -43,4 +43,5 @@ The following optimization functions are implemented in this playground:
 2. [Wikipedia: Test functions for optimization](https://en.wikipedia.org/wiki/Test_functions_for_optimization)
 
 # Example
-[[media/video.mp4]]
+Click the image below to watch the optimization process of the Sphere function.
+[![](media/example.png)](media/video.mp4)
